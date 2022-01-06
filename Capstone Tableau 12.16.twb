@@ -10,6 +10,7 @@
     <IntuitiveSorting_SP2 />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
     <SetMembershipControl />
@@ -288,6 +289,172 @@
       <column-instance column='[Enviro Sum Vegan (copy)_4181733046502006789]' derivation='Sum' name='[sum:Enviro Sum Vegan (copy)_4181733046502006789:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Enviro Sum Vegan No Nuts (copy)_4181733043305390081]' derivation='Sum' name='[sum:Enviro Sum Vegan No Nuts (copy)_4181733043305390081:qk]' pivot='key' type='quantitative' />
       <column-instance column='[enviro_sum]' derivation='Sum' name='[sum:enviro_sum:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/ellafayer/Documents/NSS/Food_Environmental_Impact/data/FINAL_cap.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/06/2022 03:39:50 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='FINAL_cap' increment-value='%null%' refresh-type='create' rows-inserted='30' timestamp-start='2022-01-06 15:39:49.935' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Food product</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Food product]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Food product</remote-alias>
+              <ordinal>0</ordinal>
+              <family>FINAL_cap.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FINAL_cap.csv_4118E97D7F324CCB81FE77E71FFE37CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GHG_Emissions</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GHG_Emissions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GHG_Emissions</remote-alias>
+              <ordinal>1</ordinal>
+              <family>FINAL_cap.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FINAL_cap.csv_4118E97D7F324CCB81FE77E71FFE37CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Eutrophying_Emissions</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Eutrophying_Emissions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Eutrophying_Emissions</remote-alias>
+              <ordinal>2</ordinal>
+              <family>FINAL_cap.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FINAL_cap.csv_4118E97D7F324CCB81FE77E71FFE37CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Land_Use</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Land_Use]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Land_Use</remote-alias>
+              <ordinal>3</ordinal>
+              <family>FINAL_cap.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FINAL_cap.csv_4118E97D7F324CCB81FE77E71FFE37CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Scarcity_weighted_Water_Use</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Scarcity_weighted_Water_Use]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Scarcity_weighted_Water_Use</remote-alias>
+              <ordinal>4</ordinal>
+              <family>FINAL_cap.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FINAL_cap.csv_4118E97D7F324CCB81FE77E71FFE37CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GHG_Percentiles</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GHG_Percentiles]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GHG_Percentiles</remote-alias>
+              <ordinal>5</ordinal>
+              <family>FINAL_cap.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FINAL_cap.csv_4118E97D7F324CCB81FE77E71FFE37CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Eutrophying_Percentiles</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Eutrophying_Percentiles]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Eutrophying_Percentiles</remote-alias>
+              <ordinal>6</ordinal>
+              <family>FINAL_cap.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FINAL_cap.csv_4118E97D7F324CCB81FE77E71FFE37CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Land_Percentiles</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Land_Percentiles]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Land_Percentiles</remote-alias>
+              <ordinal>7</ordinal>
+              <family>FINAL_cap.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FINAL_cap.csv_4118E97D7F324CCB81FE77E71FFE37CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weighted_Water_Percentiles</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Weighted_Water_Percentiles]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weighted_Water_Percentiles</remote-alias>
+              <ordinal>8</ordinal>
+              <family>FINAL_cap.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FINAL_cap.csv_4118E97D7F324CCB81FE77E71FFE37CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>enviro_sum_percentiles</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[enviro_sum_percentiles]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>enviro_sum_percentiles</remote-alias>
+              <ordinal>9</ordinal>
+              <family>FINAL_cap.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FINAL_cap.csv_4118E97D7F324CCB81FE77E71FFE37CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>enviro_sum</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[enviro_sum]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>enviro_sum</remote-alias>
+              <ordinal>10</ordinal>
+              <family>FINAL_cap.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FINAL_cap.csv_4118E97D7F324CCB81FE77E71FFE37CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
         <style-rule element='mark'>
@@ -364,6 +531,9 @@
                   <column datatype='real' name='enviro_sum' ordinal='10' />
                 </columns>
               </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
             </properties>
           </object>
         </objects>
@@ -948,8 +1118,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='64' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='63' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='68' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='67' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='All Food Products' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1003,8 +1173,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='77' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='76' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='81' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='80' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='62500' id='41' is-fixed='true' name='Area_Combined' show-title='false' w='70000' x='1000' y='1250'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1219,8 +1389,8 @@ Further steps that could be taken are collecting data on different consumption l
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='800' minheight='800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='21' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='25' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone fixed-size='231' h='28875' id='5' is-centered='0' is-fixed='true' is-scaled='1' param='/Users/ellafayer/Desktop/Screen Shot 2022-01-03 at 9.38.27 AM.png' type-v2='bitmap' w='33300' x='700' y='49000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1280,8 +1450,8 @@ Further steps that could be taken are collecting data on different consumption l
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='20' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='24' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone fixed-size='269' h='33625' id='3' is-centered='0' is-fixed='true' is-scaled='1' param='/Users/ellafayer/Desktop/cups.pdf.png' type-v2='bitmap' w='50000' x='200' y='56750'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1349,7 +1519,7 @@ Further steps that could be taken are collecting data on different consumption l
       <viewpoints>
         <viewpoint name='All Food Products' />
       </viewpoints>
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{5B6B70C7-F701-4C72-B46D-44836AC45F1E}' />
     </window>
     <window class='dashboard' name='Area / Top 10'>
@@ -1365,7 +1535,7 @@ Further steps that could be taken are collecting data on different consumption l
         <viewpoint name='Top 10 Land' />
         <viewpoint name='Top 10 Scarce Water' />
       </viewpoints>
-      <active id='12' />
+      <active id='-1' />
       <simple-id uuid='{303B1AD9-4283-4E35-8596-4DF651CE76BE}' />
     </window>
     <window class='worksheet' name='Area_Combined'>
@@ -1689,12 +1859,12 @@ Further steps that could be taken are collecting data on different consumption l
     </window>
     <window class='dashboard' hidden='true' name='almonds'>
       <viewpoints />
-      <active id='4' />
+      <active id='-1' />
       <simple-id uuid='{5D75DB9E-FDEE-4A0C-B2BA-1C30623C4C65}' />
     </window>
     <window class='dashboard' hidden='true' name='images'>
       <viewpoints />
-      <active id='5' />
+      <active id='-1' />
       <simple-id uuid='{696D14D7-1CB5-49CD-A427-8DDB1C2EFF06}' />
     </window>
   </windows>
